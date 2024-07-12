@@ -1,63 +1,67 @@
-//1.
 
-const h1Ref = document.querySelector('#recipe-name');
+/////PART 1///////
 
-console.log(h1Ref.childNodes[0].nodeValue);
+// //1.
 
-//2.
-console.log(h1Ref.nodeName);
+// const h1Ref = document.querySelector('#recipe-name');
 
-//3.
-const pRef = document.querySelector('.description');
-const compStyleP = window.getComputedStyle(pRef);
+// console.log(h1Ref.childNodes[0].nodeValue);
 
-console.log(compStyleP.getPropertyValue('font-size'));
+// //2.
+// console.log(h1Ref.nodeName);
 
-//4.
+// //3.
+// const pRef = document.querySelector('.description');
+// const compStyleP = window.getComputedStyle(pRef);
 
-const imgRef = document.querySelector('img');
-const altRef = imgRef.getAttribute('alt');
+// console.log(compStyleP.getPropertyValue('font-size'));
 
-console.log(altRef);
+// //4.
 
-//5.
-const imgWidth = imgRef.clientWidth;
-const imgHeight = imgRef.clientHeight;
-const imgURL = imgRef.getAttribute('src');
+// const imgRef = document.querySelector('img');
+// const altRef = imgRef.getAttribute('alt');
 
-const imgDimension = {
+// console.log(altRef);
 
-    url: imgURL,
-    width: imgWidth,
-    height: imgHeight,
+// //5.
+// const imgWidth = imgRef.clientWidth;
+// const imgHeight = imgRef.clientHeight;
+// const imgURL = imgRef.getAttribute('src');
+
+// const imgDimension = {
+
+//     url: imgURL,
+//     width: imgWidth,
+//     height: imgHeight,
     
-};
+// };
 
-console.log(imgDimension);
+// console.log(imgDimension);
 
-//6.
-const ulRef = document.querySelector('.ingredients-list-paste');
-const numOfLi = ulRef.childElementCount;
+// //6.
+// const ulRef = document.querySelector('.ingredients-list-paste');
+// const numOfLi = ulRef.childElementCount;
 
-console.log(numOfLi);
+// console.log(numOfLi);
 
-//7.
+// //7.
 
-const liFour = ulRef.children[3];
-console.log(liFour.innerHTML);
+// const liFour = ulRef.children[3];
+// console.log(liFour.innerHTML);
 
-//8.
-const olRef = document.querySelectorAll('.instructions-list>li');
-console.log(olRef)
+// //8.
+// const olRef = document.querySelectorAll('.instructions-list>li');
+// console.log(olRef)
 
-const instructionsArr = [];
+// const instructionsArr = [];
 
-olRef.forEach((item, index) => {
+// olRef.forEach((item, index) => {
 
-    instructionsArr.push({
-        order: index +1,
-        text: item.textContent.trim()
-    })
-});
+//     instructionsArr.push({
+//         order: index +1,
+//         text: item.textContent.trim()
+//     })
+// });
 
-console.log(instructionsArr)
+// console.log(instructionsArr)
+
